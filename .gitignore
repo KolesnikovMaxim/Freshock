@@ -1,0 +1,12 @@
+# Стандартные наработки
+.DS_Store
+.idea/
+.idea/*
+.vscode
+*.sublime*
+npm-debug.*
+# Проектные наработки
+dist/
+node_modules/
+package-lock.json
+app/css/*

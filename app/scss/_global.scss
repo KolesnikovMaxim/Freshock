@@ -1,0 +1,14 @@
+body {
+  background-color: $main;
+  color: $text;
+  font-size: 14px;
+  line-height: 1.4;
+  @extend %lato-600;
+}
+
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
