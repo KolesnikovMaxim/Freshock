@@ -130,9 +130,9 @@
 
   &::before {
     content: '';
-    background-image: url(../images/svg/search.png);
+    background-image: url(../images/svg/search.svg);
     position: absolute;
-    width: 20px;
+    width: 21px;
     height: 20px;
     left: 0;
     transform: translate(10px, 15px);
@@ -142,7 +142,7 @@
     width: 419px;
     height: 50px;
     padding: 15px 15px 15px 50px;
-    border: none;
+    
     border-radius: 6px 0 0 6px;
   }
 
@@ -211,9 +211,97 @@
     letter-spacing: 0.03em;
     text-align: center;
     line-height: 1.8;
-    
   }
 }
+
+.footer {
+  background-color: $footer;
+  @extend %lato-400;
+  color: $white;
+  line-height: 1.4;
+  
+  &__head {
+    padding: 30px 0;
+  }
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+
+  &__form {
+    line-height: 1;
+    width: 300px;
+    display: table;
+  }
+
+  &__caption {
+    display: inline-block;
+    margin-bottom: 18px;
+    
+  }
+
+  &__email {
+    padding: 12px;
+    border-radius: 6px 0px 0px 6px;
+  }
+
+  &__email::placeholder {
+    color: $footer-placeholder;
+  }
+
+  &__btn {
+    @extend %lato-700;
+    color: $white;
+    font-size: 12px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    background-color: $footer-btn;
+    padding: 14px 10px 12px 14px;
+    border-radius: 0px 6px 6px 0px;
+  }
+
+  &__list:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  &__address {
+    font-style: normal;
+    
+  }
+
+  &__contact,
+  &__hotline {
+    margin-bottom: 18px;
+  }
+
+  &__hotline {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.footer-bottom {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+
+  &__icon:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+
+
+
 
 
 @import 'media';
