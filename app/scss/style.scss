@@ -142,7 +142,7 @@
     width: 419px;
     height: 50px;
     padding: 15px 15px 15px 50px;
-    
+
     border-radius: 6px 0 0 6px;
   }
 
@@ -167,10 +167,10 @@
 
   &__btn:hover {
     background-color: $search-btn-hover;
-
   }
 
   &__btn:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: $search-btn;
     color: $search-btn-active;
   }
@@ -219,7 +219,7 @@
   @extend %lato-400;
   color: $white;
   line-height: 1.4;
-  
+
   &__head {
     padding: 30px 0;
   }
@@ -239,7 +239,6 @@
   &__caption {
     display: inline-block;
     margin-bottom: 18px;
-    
   }
 
   &__email {
@@ -262,13 +261,27 @@
     border-radius: 0px 6px 6px 0px;
   }
 
+  &__btn:focus {
+    border: 4px solid $search-btn-focus;
+    border-radius: 0 10px 10px 0;
+    margin: -4px;
+  }
+
+  &__btn:hover {
+    background-color: $footer-btn-hover;
+  }
+
+  &__btn:active {
+    color: $footer-btn-active;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
   &__list:not(:last-child) {
     margin-bottom: 18px;
   }
 
   &__address {
     font-style: normal;
-    
   }
 
   &__contact,
@@ -286,13 +299,21 @@
     justify-content: space-evenly;
     align-items: center;
   }
+
+  &__social-icon:active {
+    fill-opacity: 0.7;
+  }
 }
 
 .footer-bottom {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 24px 0;
+  border-top: 1px solid $white-opacity;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__icon:not(:last-child) {
     margin-right: 24px;
