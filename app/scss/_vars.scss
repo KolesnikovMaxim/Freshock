@@ -2,25 +2,20 @@ $main: #E5E5E5;
 $text: #121212;
 $white: #fff;
 $white-opacity:rgba(255, 255, 255, 0.5);
-$header-bg-1: #31352B;
-$header-bg-2: #63A60F;
-$catalog: #63A60E;
+$header-footer-bg: #31352B;
+$header-bg: #63A60F;
+$catalog-footer-btn: #63A60E;
 $catalog-text:#000;
 $catalog-hover-active:#E0EDCF;
-$placeholder: #31352B;
-$search-btn:#31352B;
-$search-btn-focus:#E0EDCF;
+$search:#31352B;
+$search--footer-btn-focus:#E0EDCF;
 $search-btn-hover: rgba(49, 53, 43, 0.85);
-$search-btn-active: rgba(255, 255, 255, 0.5);
 $user-menu-hover: rgba(255, 255, 255, 0.1);
 $user-num: #CF3E3B;
 
-$footer: #31352B;
 $footer-placeholder: #4F4F4F;
-$footer-btn:#63A60E;
-$footer-btn-focus: #E0EDCF;
 $footer-btn-hover: #4D800C;
-$footer-btn-active: rgba(255, 255, 255, 0.5);
+
 
 
 
@@ -64,4 +59,27 @@ $footer-btn-active: rgba(255, 255, 255, 0.5);
 %signika-700 {
   font-family: 'Signika-Bold', sans-serif;
   font-weight: 700;
+}
+
+
+%btn {
+  color: $white;
+  text-transform: uppercase;
+  border-radius: 0px 6px 6px 0px;
+  transition: border-radius 0.3s linear,
+  background-color 0.3s linear,
+  box-shadow 0.3s linear,
+  color 0.3s linear;
+}
+
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

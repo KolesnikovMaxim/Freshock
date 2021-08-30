@@ -85,55 +85,43 @@
           <form class="header-form" action="#">
             <div class="header-form__wrapper">
               <select class="header-form__select" name="catalog">
-                <option value="Каталог продуктов">
-                  <label class="header-form__name" for="text">Каталог продуктов</label>
+                <option class="header-form__option" value=" Каталог продуктов" label="Каталог продуктов">
                 </option>
-                <option class="header-form__option" value="Овощи и фрукты">
-                  <label class="header-form__name" for="text">Овощи и фрукты</label>
+                <option class="header-form__option" value="Овощи и фрукты" label="Овощи и фрукты">
                 </option>
-                <option class="header-form__option" value="Бакалея">
-                  <label class="header-form__name" for="text">Бакалея</label>
+                <option class="header-form__option" value="Бакалея" label="Бакалея">
                 </option>
-                <option class="header-form__option" value="Молочные продукты">
-                  <label class="header-form__name" for="text">Молочные продукты</label>
+                <option class="header-form__option" value="Молочные продукты" label="Молочные продукты">
                 </option>
-                <option class="header-form__option" value="Хлеб">
-                  <label class="header-form__name" for="text">Хлеб</label>
-                </option>
-                <option class="header-form__option" value="Мясо">
-                  <label class="header-form__name" for="text">Мясо</label>
-                </option>
-                <option class="header-form__option" value="Колбаса">
-                  <label class="header-form__name" for="text">Колбаса</label>
-                </option>
-                <option class="header-form__option" value="Рыба">
-                  <label class="header-form__name" for="text">Рыба</label>
-                </option>
-                <option class="header-form__option" value="Алкоголь">
-                  <label class="header-form__name" for="text">Алкоголь</label>
-                </option>
-                <option class="header-form__option" value="Напитки">
-                  <label class="header-form__name" for="text">Напитки</label>
-                </option>
-                <option class="header-form__option" value="Торты">
-                  <label class="header-form__name" for="text">Торты</label>
+                <option class="header-form__option" value="Хлеб" label="Хлеб">
                 </option>
                 <option class="header-form__option" value="Мясо" label="Мясо">
-                  <label class="header-form__name" for="text">Мясо</label>
                 </option>
-                <option class="header-form__option" value="Чай, кофе">
-                  <label class="header-form__name" for="text">Чай, кофе</label>
+                <option class="header-form__option" value="Колбаса" label="Колбаса">
+                </option>
+                <option class="header-form__option" value="Рыба" label="Рыба">
+                </option>
+                <option class="header-form__option" value="Алкоголь" label="Алкоголь">
+                </option>
+                <option class="header-form__option" value="Напитки" label="Напитки">
+                </option>
+                <option class="header-form__option" value="Торты" label="Торты">
+                </option>
+                <option class="header-form__option" value="Мясо" label="Мясо">
+                </option>
+                <option class="header-form__option" value="Чай, кофе" label="Чай, кофе">
                 </option>
               </select>
             </div>
             <div class="header-search">
-              <input class="header-search__input" type="text" name="" id="" placeholder="Найти в магазине ...">
-              <button class="header-search__btn" type="submit">ПОИСК</button>
+              <input class="header-search__input" type="text" name="search" id="search"
+                placeholder="Найти в магазине ...">
+              <button class="header-search__btn" type="submit">Поиск</button>
             </div>
           </form>
           <ul class="header-menu">
             <li class="header-menu__item">
-              <a class="header-menu__link" href="#">
+              <a class="header-menu__link" href="#" aria-label="Пользователь">
                 <svg class="header-menu__icon" width="25" height="32" viewBox="0 0 25 32" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -143,7 +131,7 @@
               </a>
             </li>
             <li class="header-menu__item">
-              <a class="header-menu__link" href="#">
+              <a class="header-menu__link" href="#" aria-label="Закладки">
                 <svg class="header-menu__icon" width="32" height="29" viewBox="0 0 32 29" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -154,7 +142,7 @@
               </a>
             </li>
             <li class="header-menu__item">
-              <a class="header-menu__link" href="#">
+              <a class="header-menu__link" href="#" aria-label="Карзина">
                 <svg class="header-menu__icon" width="32" height="31" viewBox="0 0 32 31" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -193,7 +181,7 @@
             Следите за нашими акциями
           </label>
           <input class="footer-top__email" type="email" id="email" name="email" placeholder="email@email.com" required>
-          <button class="footer-top__btn" type="">Подписаться</button>
+          <button class="footer-top__btn" type="submit">Подписаться</button>
         </form>
         <div class="footer-top__menu">
           <ul class="footer-top__item">
@@ -261,7 +249,7 @@
           </div>
           <ul class="footer-top__social">
             <li class="footer-top__social-list">
-              <a class="footer-top__social-link" href="#">
+              <a class="footer-top__social-link" href="#" aria-label="Фйесбук">
                 <svg class="footer-top__social-icon" width=" 17" height="32" viewBox="0 0 17 32" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -271,7 +259,7 @@
               </a>
             </li>
             <li class="footer-top__social-list">
-              <a class="footer-top__social-link" href="#">
+              <a class="footer-top__social-link" href="#" aria-label="Ютуб">
                 <svg class="footer-top__social-icon" width="32" height="24" viewBox="0 0 32 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -281,7 +269,7 @@
               </a>
             </li>
             <li class="footer-top__social-list">
-              <a class="footer-top__social-link" href="#">
+              <a class="footer-top__social-link" href="#" aria-label="Телеграм">
                 <svg class="footer-top__social-icon" width="32" height="28" viewBox="0 0 32 28" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -291,7 +279,7 @@
               </a>
             </li>
             <li class="footer-top__social-list">
-              <a class="footer-top__social-link" href="#">
+              <a class="footer-top__social-link" href="#" aria-label="Инстограмм">
                 <svg class="footer-top__social-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -314,7 +302,7 @@
       <div class="container">
         <div class="footer-bottom__inner">
           <p class="footer-bottom__copy">
-            © 2021 ФРЕШОК
+            © 2021 Фрешок
           </p>
           <div class="footer-bottom__accept">
             <svg class="footer-bottom__icon" width="93" height="29" viewBox="0 0 93 29" fill="none"
