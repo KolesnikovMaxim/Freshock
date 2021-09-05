@@ -1,34 +1,23 @@
-$main: #E5E5E5;
-$text: #121212;
 $white: #fff;
-$white-opacity:rgba(255, 255, 255, 0.5);
-$box-shadow: rgba(0, 0, 0, 0.25);
-$header-footer-bg: #31352B;
-$header-bg: #63A60F;
-$catalog-footer-btn: #63A60E;
-$catalog-text:#000;
-$catalog-hover-active:#E0EDCF;
-$search:#31352B;
-$search--footer-btn-focus:#E0EDCF;
-$search-btn-hover: rgba(49, 53, 43, 0.85);
-$user-menu-hover: rgba(255, 255, 255, 0.1);
-$slider--user-num: #CF3E3B;
+$silver-600: #C1C1C1;
+$silver-100: #F6F6F6;
+$dark-900: #121212;
+$dark-800: #31352B;
+$dark-500: #505050;
+$green-900: #4D810C;
+$green-800: #63A60F;
+$green-200: #E0EDCF;
+$green-100: #EFF6E7;
+$red-900: #CF3E3B;
+$orange-900: #FF7A00;
+$yellow-900: #FFB800;
 
-
-$footer-placeholder: #4F4F4F;
-$footer-btn-hover: #4D800C;
-
-
-$slider: rgba(255, 255, 255, 0.8);
-$slider-title-text: #505050;
-$slider-btn: rgba(99, 166, 14, 0.5);
-$slider-btn-hover: #4D810C;
-$advantages-bg: #F6F6F6;
-
-
-
-
-
+$white-opacity-1:rgba(255, 255, 255, 0.1);
+$white-opacity-5:rgba(255, 255, 255, 0.5);
+$dark-opacity-1: rgba(0, 0, 0, 0.1);
+$dark-opacity-2: rgba(17, 17, 17, 0.2);
+$green-opacity-5: rgba(99, 166, 14, 0.5);
+$green-opacity-8: rgba(49, 53, 43, 0.85);
 
 
 %lato-300 {
@@ -71,15 +60,11 @@ $advantages-bg: #F6F6F6;
   font-weight: 700;
 }
 
-
-%btn {
-  color: $white;
-  text-transform: uppercase;
-  border-radius: 0px 6px 6px 0px;
-  transition: border-radius 0.3s linear,
-  background-color 0.3s linear,
-  box-shadow 0.3s linear,
-  color 0.3s linear;
+%transition {
+  transition: border-radius 0.3s ease-in-out,
+  background-color 0.3s ease-in-out,
+  box-shadow 0.3s ease-in-out,
+  color 0.3s ease-in-out;
 }
 
 %flex {
